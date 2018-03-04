@@ -116,5 +116,15 @@ if ! shopt -oq posix; then
   fi
 fi
 
+
+
+
+#My stuff
 cd /mnt/c/Users/sean/Desktop/CS
+
+#aliases
 alias config='/usr/bin/git --git-dir=/home/sean/.cfg/ --work-tree=/home/sean'
+alias g='git'
+alias gs='git status'
+alias ga='git add'
+
