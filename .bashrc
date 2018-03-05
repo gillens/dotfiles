@@ -125,7 +125,7 @@ fi
 cd /mnt/c/Users/sean/Desktop/CS
 
 #aliases
-alias config='/usr/bin/git --git-dir=/home/sean/.cfg/ --work-tree=/home/sean'
+alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias g='git'
 alias gs='git status'
 alias ga='git add'
