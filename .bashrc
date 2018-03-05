@@ -121,9 +121,6 @@ fi
 
 #My stuff
 
-#for linux subsystem computers only
-cd /mnt/c/Users/sean/Desktop/CS
-
 #aliases
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias g='git'
