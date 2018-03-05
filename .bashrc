@@ -120,6 +120,8 @@ fi
 
 
 #My stuff
+
+#for linux subsystem computers only
 cd /mnt/c/Users/sean/Desktop/CS
 
 #aliases
@@ -127,4 +129,6 @@ alias config='/usr/bin/git --git-dir=/home/sean/.cfg/ --work-tree=/home/sean'
 alias g='git'
 alias gs='git status'
 alias ga='git add'
-
+alias gc='git commit -m'
+alias gch='git checkout'
+alias gp='git push'
