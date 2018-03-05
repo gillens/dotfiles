@@ -51,10 +51,10 @@ map <F5> :w<CR> :!tmux send-keys -t 0 C-a C-k "echo -e '\n\n\n\n\n'" Enter; tmux
 map <F6> :w<CR> :!tmux send-keys -t 0 C-a C-k "echo -e '\n\n\n\n\n'" Enter; tmux send-keys -t 0 "make" Enter <CR><CR>
 
 
-
 "Learn:
 "gt, gT :tab navigation
 "hjkl navigation
+" 10j, 15j, etc
 "gi : last edited location
 "F a: go before current location to previous 'a' on line
 "* : on word, go to next instance */ */ */ */ */
