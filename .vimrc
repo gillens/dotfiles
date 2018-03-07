@@ -47,8 +47,8 @@ ino <down> <Nop>
 ino <left> <Nop>
 ino <right> <Nop>
 
-map <F5> :!tmux send-keys -t 0 "echo -e '\n\n\n\n\n'" Enter; tmux send-keys -t 0 "make" Enter; tmux select-pane -t 0; tmux send-keys -t 0 "./smallsh" <CR><CR>
-map <F6> :!tmux send-keys -t 0 "echo -e '\n\n\n\n\n'" Enter; tmux send-keys -t 0 "make" Enter <CR><CR>
+map <F5> :w<CR> :!tmux send-keys -t 0 C-a C-k "echo -e '\n\n\n\n\n'" Enter; tmux send-keys -t 0 "make" Enter; tmux select-pane -t 0; tmux send-keys -t 0 "./smallsh" <CR><CR>
+map <F6> :w<CR> :!tmux send-keys -t 0 C-a C-k "echo -e '\n\n\n\n\n'" Enter; tmux send-keys -t 0 "make" Enter <CR><CR>
 
 
 
@@ -64,6 +64,8 @@ map <F6> :!tmux send-keys -t 0 "echo -e '\n\n\n\n\n'" Enter; tmux send-keys -t 0
 " z b: move current line to bottom
 "C-e: move window up, no cursor move
 " C-y: move window down, no cursor move
+" C-d
+" C-u
 "C-w, arrow: move buffers
 "C-w, s: split horizontal
 "C-w, v: split vertical
@@ -81,6 +83,9 @@ map <F6> :!tmux send-keys -t 0 "echo -e '\n\n\n\n\n'" Enter; tmux send-keys -t 0
 "   'a : go to mark 'a'
 ""add : paste into 'a' register
 "C-r : combine with register, ", etc to paste when in insert mode
+"
+"caps lock : ctrl
+"ctrl-[ : escape
 "
 "
 "issues:
