@@ -13,3 +13,4 @@ git clone --bare https://github.com/gillens/dotfiles.git $HOME/.cfg
 /usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME checkout
 ```
 restart terminal, or `source ~/.bashrc`
+`config config --local status.showUntrackedFiles no`
