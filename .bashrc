@@ -34,7 +34,9 @@ alias gwipe='git add -A && git commit -qm "WIPE SAVEPOINT" && git reset HEAD~1 -
 alias psme='ps -o ppid,pid,euser,stat,%cpu,rss,args | head -n 1; ps -eH -o ppid,pid,euser,stat,%cpu,rss,args | grep gillens'
 alias lsd='ls -d */'
 
-source /usr/share/bash-completion/completions/git
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
 
 __git_complete gch _git_checkout
 __git_complete ga _git_add
