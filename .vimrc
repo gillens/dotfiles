@@ -8,6 +8,7 @@ set tabstop=2
 set cindent
 set number
 set tabpagemax=100
+set hlsearch
 
 
 "Change color of text and turn on syntax highlighting
@@ -24,9 +25,6 @@ set showmode "show current mode
 "inoremap '""<Left>
 "inoremap {{}<Left>
 "inoremap (()<Left>
-
-map <F7> :tabp<CR>
-map <F8> :tabn<CR>
 
 
 "highlight current line on current window
@@ -52,13 +50,9 @@ map <F6> :w<CR> :!tmux send-keys -t 0 C-a C-k "echo -e '\n\n\n\n\n'" Enter; tmux
 
 
 "Learn:
-"gt, gT :tab navigation
-"hjkl navigation
 " 10j, 15j, etc
-"gi : last edited location
 "F a: go before current location to previous 'a' on line
-"* : on word, go to next instance */ */ */ */ */
-"   # : previous instance
+"gi : last edited location
 "z z: move current line to middle
 " z t: move current line to top
 " z b: move current line to bottom
@@ -66,23 +60,26 @@ map <F6> :w<CR> :!tmux send-keys -t 0 C-a C-k "echo -e '\n\n\n\n\n'" Enter; tmux
 " C-y: move window down, no cursor move
 " C-d
 " C-u
-"C-w, arrow: move buffers
-"C-w, s: split horizontal
-"C-w, v: split vertical
-"C-w, =: resize windows equally
 "ciw,
 "ci"
 "ci(
 ""_d, "_x, etc :using registers
-":g/^baz/s/foo/bar/g  : replace foo with bar on lines starting with baz
-":mks session_name.vim
-":source session_name.vim
-":mks!  : save again
-":r !ls : paste in output of ls
 "ma : set mark 'a' at current location
 "   'a : go to mark 'a'
 ""add : paste into 'a' register
 "C-r : combine with register, ", etc to paste when in insert mode
+"
+"gt, gT :tab navigation
+"hjkl navigation
+"* : on word, go to next instance */ */ */ */ */
+"   # : previous instance
+"C-w, arrow: move buffers
+"C-w, s: split horizontal
+"C-w, v: split vertical
+"C-w, =: resize windows equally
+":g/^baz/s/foo/bar/g  : replace foo with bar on lines starting with baz
+":r !ls : paste in output of ls
+":mks!  : save again
 "
 "caps lock : ctrl
 "ctrl-[ : escape
