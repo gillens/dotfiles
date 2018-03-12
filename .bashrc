@@ -23,6 +23,20 @@ alias gs='git status'
 alias ga='git add'
 alias gc='git commit -m'
 alias gch='git checkout'
-alias gp='git push'
+alias gp='git pull'
+alias gu='git push'
+alias gb='git branch'
+alias gr='git rebase'
+
+alias gwipe='git add -A && git commit -qm "WIPE SAVEPOINT" && git reset HEAD~1 --hard'
 
 alias psme='ps -o ppid,pid,euser,stat,%cpu,rss,args | head -n 1; ps -eH -o ppid,pid,euser,stat,%cpu,rss,args | grep gillens'
+
+source /usr/share/bash-completion/completions/git
+
+__git_complete gch _git_checkout
+__git_complete ga _git_add
+__git_complete gp _git_pull
+__git_complete gu _git_push
+__git_complete gb _git_branch
+__git_complete gr _git_rebase
