@@ -27,6 +27,7 @@ alias gp='git pull'
 alias gu='git push'
 alias gb='git branch'
 alias gr='git rebase'
+alias gf='git fetch --all --prune'
 
 alias gwipe='git add -A && git commit -qm "WIPE SAVEPOINT" && git reset HEAD~1 --hard'
 
