@@ -89,8 +89,6 @@ alias gwipe='git add -A && git commit -qm "WIPE SAVEPOINT" && git reset HEAD~1 -
 
 alias psme='ps -o ppid,pid,euser,stat,%cpu,rss,args | head -n 1; ps -eH -o ppid,pid,euser,stat,%cpu,rss,args | grep gillens'
 
-source /usr/share/bash-completion/completions/git
-
 __git_complete gch _git_checkout
 __git_complete ga _git_add
 __git_complete gp _git_pull
