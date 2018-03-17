@@ -9,6 +9,7 @@ set cindent
 set number
 set tabpagemax=100
 set hlsearch
+set visualbell
 
 
 "Change color of text and turn on syntax highlighting
