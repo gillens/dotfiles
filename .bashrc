@@ -32,6 +32,7 @@ alias gf='git fetch --all --prune'
 alias gwipe='git add -A && git commit -qm "WIPE SAVEPOINT" && git reset HEAD~1 --hard'
 
 alias psme='ps -o ppid,pid,euser,stat,%cpu,rss,args | head -n 1; ps -eH -o ppid,pid,euser,stat,%cpu,rss,args | grep gillens'
+alias lsd='ls -d */'
 
 source /usr/share/bash-completion/completions/git
 
